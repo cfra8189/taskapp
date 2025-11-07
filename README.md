@@ -122,3 +122,13 @@ const status = document.getElementById("status")
 // const deadline = document.getElementById("deadline")
 const display = document.getElementById("display")
 
+I need:
+- Array for tasks[]
+- Functions:
+    - addNew()
+    - removeLast()
+
+***Added removeLast button to HTML***
+<!-- REMOVE TASK BUTTON -->
+<button id="removeLastTask"></button>
+
