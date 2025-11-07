@@ -104,3 +104,21 @@ if (timeUntilDeadline > 0) {
 
 Back to the HTML IDs:
 
+1. Input Field
+2. Add New Task Button
+3. Category Dropdown
+4. Status Dropdown
+5. Deadline (Placeholder)
+6. Display Area
+
+Now, Link the HTML elements to the JS file.
+
+8888>LINKED<8888
+
+const taskInput = document.getElementById("taskInput")
+const addNewTask = document.getElementById("addNewTask")
+const category = document.getElementById("category")
+const status = document.getElementById("status")
+// const deadline = document.getElementById("deadline")
+const display = document.getElementById("display")
+
