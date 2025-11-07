@@ -71,3 +71,7 @@ Core Ui - JS Link:
 <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.4.3/dist/js/coreui.bundle.min.js" integrity="sha384-SWhFOmxmv1pfTLKVBW7q8uossvuaWNeQFdmaWi6xdldiUjyqG9F6V2R2BOC8gkxx" crossorigin="anonymous"></script>
 
 ***Commented Out Bootstrap***
+
+Okay...It's not like Bootstrap...
+
+Deleting it and going back to Bootstrap.
