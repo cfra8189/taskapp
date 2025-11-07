@@ -75,3 +75,32 @@ Core Ui - JS Link:
 Okay...It's not like Bootstrap...
 
 Deleting it and going back to Bootstrap.
+
+I asked Google..."How to set a deadline in JS"
+
+---GOOGLE---
+Executing Code at the Deadline:
+You can use {setTimeout} to execute a function when the deadline is reached. Calculate the time difference between the current time and the deadline. 
+
+Code Block:
+
+const deadline = new Date("December 31, 2025 23:59:59");
+const now = new Date();
+const timeUntilDeadline = deadline.getTime() - now.getTime();
+
+if (timeUntilDeadline > 0) {
+    setTimeout(() => {
+        console.log("Deadline reached!");
+        
+        // Perform actions when the deadline is met
+    }, timeUntilDeadline);
+} else {
+    console.log("Deadline is already past.");
+}
+
+========================Test==Later============================
+
+*********************Hold OFF On - DEADLINE INPUT******************
+
+Back to the HTML IDs:
+

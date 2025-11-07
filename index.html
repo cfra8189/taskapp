@@ -22,46 +22,48 @@
   </head>
 
   <body>
-    <input type="text" />
-    <button></button>
-    <div class="dropdown">
+    
+    <!-- INPUT FIELD -->
+    <input id="taskInput" type="text" />
+    
+    <!-- ADD NEW TASK BUTTON -->
+    <button id="addNewTask"></button>
+    
+    <!-- CATEGORY DROPDOWN -->
+    <div id="category" class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        Dropdown button
+        Category
       </button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><a class="dropdown-item" href="#">Personal</a></li>
+        <li><a class="dropdown-item" href="#">Work</a></li>
+        <li><a class="dropdown-item" href="#">Shopping</a></li>
       </ul>
     </div>
-    <div class="dropdown">
+    
+    <!-- STATUS DROPDOWN -->
+    <div id="status" class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        Dropdown button
+        Status
       </button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><a class="dropdown-item" href="#">Not Started</a></li>
+        <li><a class="dropdown-item" href="#">In Progress</a></li>
+        <li><a class="dropdown-item" href="#">Completed</a></li>
       </ul>
     </div>
-  <div class="d-flex justify-content-center">
-  <div
-    class="border rounded"
-    data-coreui-locale="en-US"
-    data-coreui-start-date="2024/02/13"
-    data-coreui-toggle="calendar"
-  ></div>
-</div>
+  
+    <!-- DISPLAY AREA -->
     <div id="display"></div>
   </body>
 </html>
