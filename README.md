@@ -24,7 +24,7 @@ The Reflections *included*
 
 [GitHub - URL]: {https://github.com/cfra8189/taskapp}
 
-1. LINKING THE LINKS:
+1. Linking the links:
 
     CSS:
     <link rel="stylesheet" href="./css/style.css">
@@ -38,3 +38,36 @@ The Reflections *included*
     JS:
     <script src="./js/script.js"></script>
 
+2. Add HTML elements and ids:
+
+I need:
+
+- 4 Inputs - HTML Elements (taskname, category, deadline, status)
+    - 1 Button (addNewTask)
+    - 2 Dropdown (Status/Category filters)
+    - 1 Calendar (Set Deadlines)
+
+- 1 Display (Show the list of tasks // including options to update task status)
+
+--------------------------------------------------------------------
+==A==D==PONDERING==H==D==
+Q: How to display the list of tasks?
+A: THOUGHT:
+- Add <ul> with some .textContent to display it on the page.
+
+---I'M GOING TO TRY IT AFTER I FINISH ADDING THE ELEMENTS AND IDs---
+
+Adding the elements and Ids:
+
+Forget what I said about Google...I need a Calendar for the deadline and mark tasks as overdue.
+
+I want to try coreui.io.
+I guess it's like Bootstrap...
+
+CoreUi - CSS Link:
+<link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.4.3/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-oMIIhJL1T5s+PxJr6+Qb0pO1IRFB6OGMM+J57UBT3UQKxSVsb++MkXpu9cLqaJxu" crossorigin="anonymous">
+
+Core Ui - JS Link:
+<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.4.3/dist/js/coreui.bundle.min.js" integrity="sha384-SWhFOmxmv1pfTLKVBW7q8uossvuaWNeQFdmaWi6xdldiUjyqG9F6V2R2BOC8gkxx" crossorigin="anonymous"></script>
+
+***Commented Out Bootstrap***
