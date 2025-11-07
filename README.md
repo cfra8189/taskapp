@@ -132,3 +132,41 @@ I need:
 <!-- REMOVE TASK BUTTON -->
 <button id="removeLastTask"></button>
 
+======TESTING on CHROME======
+tasks
+[]
+
+addNew('apple')
+script.js:15 apple added.
+undefined
+
+addNew('orange')
+script.js:15 orange added.
+undefined
+
+addNew('grapes')
+script.js:15 grapes added.
+undefined
+
+tasks
+(3) ['apple', 'orange', 'grapes']
+0
+: 
+"apple"
+1
+: 
+"orange"
+2
+: 
+"grapes"
+length
+: 
+3
+[[Prototype]]
+: 
+Array(0)
+
+============================
+
+They WORK!!!!
+
