@@ -8,7 +8,7 @@ const display = document.getElementById("display");
 
 
 
-const tasks = [];
+const tasks = {};
 
 // ------FUNCTIONS------
 
@@ -44,3 +44,15 @@ function displayTasks(){
     taskItem.textContent = task;
     display.appendChild(taskItem);
 })};
+
+let currentCategory = "Personal";
+
+document.getElementById("personal").addEventListener('click', ()=>{
+    currentCategory = "Personal";
+})
+document.getElementById("work").addEventListener('click', ()=>{
+    currentCategory = "Work";
+})
+document.getElementById("shopping").addEventListener('click', ()=>{
+    currentCategory = "Shopping";
+})

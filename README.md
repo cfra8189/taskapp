@@ -261,3 +261,31 @@ function displayTasks(){
     display.appendChild(taskItem);
 })};
 
+Now...I'll add the category options
+
+I need to:
+- Add IDs to the categories
+- Link them to the JS file
+***I have to GOOGLE: Setting Category to list items in JS***
+
+Google says:
+- I need to restructure my data by changing my tasks from holding an array to holding objects.
+    - const tasks = {}
+
+- Introduce a variable to store the currently selected category name.
+    - let currentCategory = 'Personal';
+
+and from here...
+
+I need to:
+- Find the Personal category
+    - document.getElementById('personal');
+- Add .addEventListner('click', ()=> {
+    currentCategory = 'Personal';
+})
+- Then rinse and repeat for the Work and Shopping categories.
+
+===TESTING===
+
+Nothing is workingggggg!!!!
+
