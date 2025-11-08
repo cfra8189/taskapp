@@ -19,3 +19,14 @@ function removeLast(){
     tasks.pop();
     console.log(`${item} removed.`)
 }
+
+
+addNewTask.addEventListener("click", ()=> {
+    tasks.push(taskInput.value);
+    console.log(`${taskInput.value} added.`)
+});
+
+removeLastTask.addEventListener("click", ()=> { 
+    tasks.pop();
+    console.log(`Item removed.`)
+});

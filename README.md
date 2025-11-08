@@ -170,3 +170,7 @@ Array(0)
 
 They WORK!!!!
 
++++NEXT+++
+
+- Use the taskInput - INPUT FIELD to addNewTask
+
