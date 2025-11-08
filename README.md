@@ -285,7 +285,63 @@ I need to:
 })
 - Then rinse and repeat for the Work and Shopping categories.
 
+
+document.getElementById("personal").addEventListener('click', ()=>{
+    currentCategory = "Personal";
+})
+document.getElementById("work").addEventListener('click', ()=>{
+    currentCategory = "Work";
+})
+document.getElementById("shopping").addEventListener('click', ()=>{
+    currentCategory = "Shopping";
+})
+
 ===TESTING===
 
 Nothing is workingggggg!!!!
+
+I was wrong about changing:
+const tasks = [] to const tasks {}
+
+I'm turning it back to const tasks = []
+
+I Googled:
+- Creating an object in an array Javascript
+- The example it gave:
+    const cars = [
+        { make: "Toyota", model: "Camry" },
+        { make: "Ford", model: "F-150" }
+    ]
+
+So, I'm guessing, I need to have something like:
+
+const tasks = [
+    {task: "", category: "", status: ""}
+]
+
+Well...That didn't work...
+
+I need to figure out how to add the task and category into the array....
+
+I tried pushing currentCategory.
+When I entered the task and selected the category, only the category was displayed.
+
+Maybe I can try both taskInput.value and currentCategory...
+
+OKAYYYY!!!! I SEE BOTH!!!!
+
+Let me do the same thing for the Status category.
+
+document.getElementById("notStarted").addEventListener('click', ()=>{
+    currentCategory = ">Not Started";
+})
+document.getElementById("inProgress").addEventListener('click', ()=>{
+    currentCategory = ">In Progress";
+})
+document.getElementById("completed").addEventListener('click', ()=>{
+    currentCategory = "Completed";
+})
+
+OKAYYYYYYYYYYYY!!!! Now I see all three!!!
+
 

@@ -8,7 +8,7 @@ const display = document.getElementById("display");
 
 
 
-const tasks = {};
+const tasks = [];
 
 // ------FUNCTIONS------
 
@@ -24,7 +24,7 @@ function removeLast() {
 
 
 addNewTask.addEventListener("click", () => {
-    tasks.push(taskInput.value);
+    tasks.push(currentCategory, taskInput.value, currentStatus);
     displayTasks()
     console.log(`${taskInput.value} added.`)
     taskInput.value = "";
@@ -55,4 +55,16 @@ document.getElementById("work").addEventListener('click', ()=>{
 })
 document.getElementById("shopping").addEventListener('click', ()=>{
     currentCategory = "Shopping";
+})
+
+let currentStatus = "Not Started";
+
+document.getElementById("notStarted").addEventListener('click', ()=>{
+    currentCategory = "Not Started";
+})
+document.getElementById("inProgress").addEventListener('click', ()=>{
+    currentCategory = "In Progress";
+})
+document.getElementById("completed").addEventListener('click', ()=>{
+    currentCategory = "Completed";
 })
