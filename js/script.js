@@ -24,11 +24,12 @@ function removeLast(){
 addNewTask.addEventListener("click", ()=> {
     tasks.push(taskInput.value);
     console.log(`${taskInput.value} added.`)
-    input.value = " ";
+    taskInput.value = " ";
 });
 
 removeLastTask.addEventListener("click", ()=> { 
     tasks.pop();
     console.log(`Item removed.`)
-    input.value = " ";
+    taskInput.value = " ";
 });
+

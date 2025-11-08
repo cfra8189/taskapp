@@ -201,6 +201,12 @@ They WORK!!!!
 ---ADDING [input.value = " ";] to the end of the button functions to clear the input
 ...Learned from the YouTube Video above...
 
+Set Timer for 35 Minutes
+
+Play Pure Tones
+https://www.youtube.com/watch?v=cY7C1sF__wc - 
+Power Focus - 14Hz Beta Waves to Unlock Focus and Elevate Concentration (Remaster)
+
 ======TESTING on CHROME======
 
 
