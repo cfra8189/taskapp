@@ -1,4 +1,4 @@
-No Google...
+No Google...maybe...
 Only MATERIALS:
 1. SBA: Task Management App
 2. GitHub
@@ -283,6 +283,7 @@ I need to:
 - Add .addEventListner('click', ()=> {
     currentCategory = 'Personal';
 })
+
 - Then rinse and repeat for the Work and Shopping categories.
 
 
@@ -345,3 +346,47 @@ document.getElementById("completed").addEventListener('click', ()=>{
 OKAYYYYYYYYYYYY!!!! Now I see all three!!!
 
 
+I think I need to see it in a table...
+
+Looking at tables on Bootstrap to add to the display to see each section
+Task | Category | Status
+
+From Bootstrap - I like the way this one looks
+<!-- On tables -->
+<table class="table-dark">...</table>
+
+<!-- On rows -->
+<tr class="table-dark">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="table-dark">...</td>
+</tr>
+---And other table elements like the thead and tbody
+
+I added it to the HTML and nothing...
+
+I need to 
+- Add the table via the JS file 
+- Create the table elements | table, row, cell
+- Append it the display.
+
+const table = document.createElement("table");
+
+table.innerHTML = `
+<table class="table-dark">
+            <thead>
+                <tr class="table-dark"></tr>
+                <th>Task</th>
+                <th>Category</th>
+                <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+`;
+
+const row = document.createElement('tr'); 
+const cell = document.createElement('td');

@@ -37,34 +37,52 @@ removeLastTask.addEventListener("click", () => {
     taskInput.value = "";
 });
 
-function displayTasks(){
+function displayTasks() {
     display.innerHTML = " ";
     tasks.forEach(function (task) {
-    const taskItem = document.createElement('div');
-    taskItem.textContent = task;
-    display.appendChild(taskItem);
-})};
+        const taskItem = document.createElement('div');
+        taskItem.textContent = task;
+        display.appendChild(taskItem);
+    })
+};
 
 let currentCategory = "Personal";
 
-document.getElementById("personal").addEventListener('click', ()=>{
+document.getElementById("personal").addEventListener('click', () => {
     currentCategory = "Personal";
 })
-document.getElementById("work").addEventListener('click', ()=>{
+document.getElementById("work").addEventListener('click', () => {
     currentCategory = "Work";
 })
-document.getElementById("shopping").addEventListener('click', ()=>{
+document.getElementById("shopping").addEventListener('click', () => {
     currentCategory = "Shopping";
 })
 
 let currentStatus = "Not Started";
 
-document.getElementById("notStarted").addEventListener('click', ()=>{
+document.getElementById("notStarted").addEventListener('click', () => {
     currentCategory = "Not Started";
 })
-document.getElementById("inProgress").addEventListener('click', ()=>{
+document.getElementById("inProgress").addEventListener('click', () => {
     currentCategory = "In Progress";
 })
-document.getElementById("completed").addEventListener('click', ()=>{
+document.getElementById("completed").addEventListener('click', () => {
     currentCategory = "Completed";
 })
+
+const table = document.createElement("table");
+
+table.innerHTML = `
+<table class="table-dark">
+            <thead>
+                <tr class="table-dark"></tr>
+                <th>Task</th>
+                <th>Category</th>
+                <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+`;
