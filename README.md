@@ -207,7 +207,57 @@ Play Pure Tones
 https://www.youtube.com/watch?v=cY7C1sF__wc - 
 Power Focus - 14Hz Beta Waves to Unlock Focus and Elevate Concentration (Remaster)
 
-======TESTING on CHROME======
+I tried task.value = " ";
+and it was wrong...it's actally inputTask.value and I switched them out.
+They work!
 
+- Add placeholder = "Enter Task" to the input element.
 
-============================
+---QUICK CHECK---
+
+I have:
+- 'Enter Task' Input Field that holds the inputTask.value
+-  2 Buttons - Add Task with addNewTask.addEventListener and Remove Last Task with removeLastTask.addEventListener
+- 2 Dropdowns for Category and Status
+
+***How to display the taskList?***
+I know I need to:
+- Create the element - [document.createElement('div')]
+- I call it taskItem 
+- Then add it (.appendChild(taskItem)) to display
+
+const taskItem = document.createElement('div') INSTEAD OF THE <UL> I mentioned in the beginning...
+
+taskItem.appendChild(taskItem)
+
+I was wrong about the display.appendChild(taskItem);
+
+It's actually... taskItem.textContent = task;
+I was right about the .textContent...
+
+I discovered that while I was creating the function showDisplay().
+
+I added:
+- display.innerHTML = " "; 
+    - to reset the display, so it would make duplicates of the list.
+
+- tasks.forEach(function (task));
+    - to run the code for each taskItem
+
+- const taskItem = document.createElement('div');
+    - to give the taskItem.value to go
+
+- taskItem.textContent = task;
+    - to display textContent which would to user's task
+
+- display.appendChild(taskItem);
+    - to add the taskItem-div(child) to the display(parent)
+
+function displayTasks(){
+    display.innerHTML = " ";
+    tasks.forEach(function (task) {
+    const taskItem = document.createElement('div');
+    taskItem.textContent = task;
+    display.appendChild(taskItem);
+})};
+

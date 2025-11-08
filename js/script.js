@@ -6,30 +6,41 @@ const status = document.getElementById("status");
 // const deadline = document.getElementById("deadline");
 const display = document.getElementById("display");
 
+
+
 const tasks = [];
 
 // ------FUNCTIONS------
 
-function addNew(item){
+function addNew(item) {
     tasks.push(item);
     console.log(`${item} added.`)
 }
 
-function removeLast(){
+function removeLast() {
     tasks.pop();
     console.log(`${item} removed.`)
 }
 
 
-addNewTask.addEventListener("click", ()=> {
+addNewTask.addEventListener("click", () => {
     tasks.push(taskInput.value);
+    displayTasks()
     console.log(`${taskInput.value} added.`)
-    taskInput.value = " ";
+    taskInput.value = "";
 });
 
-removeLastTask.addEventListener("click", ()=> { 
+removeLastTask.addEventListener("click", () => {
     tasks.pop();
-    console.log(`Item removed.`)
-    taskInput.value = " ";
+    displayTasks()
+    console.log(`Item removed.`);
+    taskInput.value = "";
 });
 
+function displayTasks(){
+    display.innerHTML = " ";
+    tasks.forEach(function (task) {
+    const taskItem = document.createElement('div');
+    taskItem.textContent = task;
+    display.appendChild(taskItem);
+})};
