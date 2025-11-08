@@ -172,5 +172,36 @@ They WORK!!!!
 
 +++NEXT+++
 
-- Use the taskInput - INPUT FIELD to addNewTask
+- Use the taskInput - INPUT FIELD to addNewTask {taskInput.value}
+- Add addEventListener to buttons:
+    - addNewTask Button:
+        
+    addNewTask.addEventListener("click", ()=> {
+    tasks.push(taskInput.value);
+    console.log(`${taskInput.value} added.`)
+    });
+    
+    - removeLastTask Button:
+    
+    removeLastTask.addEventListener("click", ()=> { 
+    tasks.pop();
+    console.log(`Item removed.`)
+    });
 
+***Cereal Break***
+
+///Finding some Pure Tones to listen to while I work\\\
+
+{YOUTUBE}
+<The BEST Way to Master JavaScript DOM in 2025 | DOM Manipulation in JavaScript>
+[https://www.youtube.com/watch?v=bI-yNnJDNcs&t=1277s]
+
+***Cereal Break***
+
+---ADDING [input.value = " ";] to the end of the button functions to clear the input
+...Learned from the YouTube Video above...
+
+======TESTING on CHROME======
+
+
+============================
