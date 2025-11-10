@@ -368,7 +368,7 @@ I added it to the HTML and nothing...
 
 I need to 
 - Add the table via the JS file 
-- Create the table elements | table, row, cell
+- Create the table elements | table, row, cell, tbody
 - Append it the display.
 
 const table = document.createElement("table");
@@ -390,3 +390,31 @@ table.innerHTML = `
 
 const row = document.createElement('tr'); 
 const cell = document.createElement('td');
+const tableBody = document.createElements('tbody');
+
+It's not working!!!!!!
+
+Asking Google how to create the object:
+It should the example that we went over in class
+.push({
+    firstName: "Clarence",
+    lastName: "Franklin",
+    age: 36
+})
+
+SOOOOOO...It should be:
+tasks.push({
+    task: " ",
+    category: " ",
+    status: " "
+})
+
+
+----------------------------------------------------------------
+
+Starting from scratch with Materialize....
+
+Deleted the html and kept the css and js.
+
+Pasted starter html code from Materialize.
+
