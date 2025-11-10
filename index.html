@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <script type="text/javascript" src="js/materialize.min.js" defer></script>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      defer
+    ></script>
+    <script src="./js/script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+  </head>
 
-<body>
+  <body>
     
-</body>
+    <h1 id="title">Task Management App</h1>
+    
+    <input type="text" id="taskInput" class="col s12 m6 l4" placeholder="Enter a Task">
 
+      <div class="input-field col s12 m6 l4">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option id="Personal" value="1">Personal</option>
+      <option id="Work" value="2">Work</option>
+      <option id="Shopping" value="3">Shopping</option>
+    </select>
+    <label>Category</label>
+  </div>
+  </body>
 </html>

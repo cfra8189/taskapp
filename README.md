@@ -418,3 +418,74 @@ Deleted the html and kept the css and js.
 
 Pasted starter html code from Materialize.
 
+Googled how to create an empty object to an array: 
+
+let myArray = []; // Initialize an empty array
+
+// Create an empty object with a property
+let myObject = {
+  propertyName: "someValue"
+};
+
+// Add the object to the array
+myArray.push(myObject);
+
+console.log(myArray);
+
+=======================
+
+const taskList = [];
+
+let task = {
+  task: "task",
+  category: "category",
+  status: "status"
+}
+
+Used Materialize textarea and js:
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  $('#textarea1').val('New Text');
+  M.textareaAutoResize($('#textarea1'));
+
+  Made some changes:
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+
+    Because the previous code wasn't working
+
+    Added Materialize select and initialization:
+
+---HTML---
+    <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div>
+
+---JS---
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+
+
+  ----I just got lost, because things were not working----
+
+  I have my input field and category selector.
+
+  
