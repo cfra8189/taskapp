@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-      defer
-    ></script>
-    <script src="./js/script.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
-  <body>
-    
-    <h1 id="title">Task Management App</h1>
-    
-    <input type="text" id="taskInput" class="col s12 m6 l4" placeholder="Enter a Task">
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+  <script src="./js/script.js" defer></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 id="title">Task Management App</h1>
+    </div>
+
+    <div class="row">
+      <input type="text" id="taskInput" class="col s12 m6 l4" placeholder="Enter a Task" />
+      <a id="addNewTask" class="btn-floating btn-large waves-effect waves-light grey pulse"><i
+          class="material-icons">add</i></a>
+      <a id="removeLastTask" class="waves-effect waves-black btn-flat">Remove</a>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12 m6 l4">
+        <select id="categorySelect">
+          <option value="" disabled selected>Choose your Category</option>
+          <option value="Personal">Personal</option>
+          <option value="Work">Work</option>
+          <option value="Shopping">Shopping</option>
+        </select>
+        <label>Category</label>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12 m6 l4">
+          <select id="statusSelect">
+            <option value="" disabled selected>Choose your Status</option>
+            <option value="Not Started">Not Started</option>
+            <option value="In Progress">In Progress</option>
+          </select>
+          <label>Status</label>
+        </div>
+      </div>
 
       <div class="input-field col s12 m6 l4">
-    <select>
-      <option value="" disabled selected>Choose your option</option>
-      <option id="Personal" value="1">Personal</option>
-      <option id="Work" value="2">Work</option>
-      <option id="Shopping" value="3">Shopping</option>
-    </select>
-    <label>Category</label>
+        <input id="dueDateInput" type="text" class="datepicker" />
+        <label for="dueDateInput">Due Date</label>
+      </div>
 
-    <ul id="taskList"></ul>
+      <div class="row">
+        <ul id="displayList"></ul>
+      </div>
+    </div>
   </div>
-  </body>
+</body>
+
 </html>

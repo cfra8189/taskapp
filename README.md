@@ -486,6 +486,8 @@ Used Materialize textarea and js:
 
   ----I just got lost, because things were not working----
 
-  I have my input field and category selector.
+ughhhhhhhhh....
+
+
 
   

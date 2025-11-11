@@ -1,3 +1,86 @@
 body {
-    background-color: blanchedalmond;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+
+.completed {
+    text-decoration: line-through; 
+    opacity: 0.6; 
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#taskInput {
+    color: white !important;
+}
+
+#taskInput::placeholder {
+    color: #aaa; 
+    opacity: 1; 
+}
+
+.select-wrapper input.select-dropdown {
+    color: white !important;
+}
+
+.input-field label {
+    color: white !important;
+}
+
+.datepicker {
+    color: white !important;
+}
+
+.datepicker-container .datepicker {
+    background-color: #333 !important; 
+}
+
+.datepicker-date-display {
+    background-color: #111 !important; 
+}
+
+.datepicker-table {
+    background-color: #333 !important;
+}
+
+
+.datepicker-table td,
+.datepicker-weekday-display {
+    color: white !important;
+}
+
+
+.datepicker-controls {
+    background-color: #333 !important;
+    border-bottom: 1px solid #555; 
+}
+
+.collection-item div {
+    color: white; 
+}
+
+.category-text {
+    color: white !important;
+}
+
+.status-text {
+    color: white !important;
+}
+
+.overdue {
+    color: red !important;
+    font-weight: 900;
+}
+
+.due-today {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
+
+.completed-due {
+    color: green !important;
+    font-style: italic;
 }
