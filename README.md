@@ -477,7 +477,7 @@ Used Materialize textarea and js:
     <label>Materialize Select</label>
   </div>
 
----JS---
+---JS---From the website---Not Ai---Screenshot Included in Repo
     document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems, options);
